@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT COMPANY | Centro de Treinamento e Alto Rendimento</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.PNG">
+    <link rel="apple-touch-icon" href="assets/logo.PNG">
+    <link rel="shortcut icon" href="assets/logo.PNG">
+
+    <!-- Tags Meta para SEO -->
+    <meta name="description"
+        content="Descubra a Fit Company, um centro de treinamento de elite. Equipamentos biomecânicos importados, treinadores especializados, área de recovery completa e planos personalizados para sua performance.">
+    <meta name="keywords"
+        content="academia premium, alta performance, treinamento funcional, musculação de elite, recovery, crioterapia, personal trainer, condicionamento físico">
+    <meta name="author" content="Fit Company">
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FIT COMPANY | Centro de Treinamento e Alto Rendimento">
+    <meta property="og:description"
+        content="Forje sua melhor versão na Fit Company. Musculação de precisão, condicionamento de elite e recuperação profissional.">
+    <meta property="og:image" content="assets/about_gym.png">
+
+    <!-- Fonts - Ambex Oblique fallbacks (Chakra Petch, Kanit, Orbitron) & Satoshi/Clash -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700;1,800;1,900&family=Kanit:ital,wght@1,800;1,900&family=Orbitron:ital,wght@1,800;1,900&family=Outfit:ital,wght@1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&f[]=satoshi@300,400,500,700,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Preload first Hero Image for performance -->
+    <link rel="preload" href="assets/hero_1.png" as="image">
+
+    <!-- Flatpickr Custom Dark Datepicker CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Background Accents (Subtle Glows & Gradients) -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+
+    <!-- Cabeçalho de Navegação -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo">
+                <img src="assets/logo.PNG" alt="Fit Company Logo" class="nav-logo-img">
+                <div class="logo-text">
+                    FIT
+                    <span class="logo-sub">COMPANY</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#programs" class="nav-link">Programas</a>
+                <a href="#coaches" class="nav-link">Treinadores</a>
+                <a href="#gallery" class="nav-link">Galeria</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
+                <a href="#plans" class="nav-link">Planos</a>
+                <a href="#location" class="nav-link">Localização</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="https://api.whatsapp.com/send/?phone=5517996038336&text&type=phone_number&app_absent=0"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-nav-cta btn-hover-effect">Falar no
+                    WhatsApp</a>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Alternar Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação Celular -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="#hero" class="mobile-link">Início</a>
+            <a href="#about" class="mobile-link">Sobre</a>
+            <a href="#programs" class="mobile-link">Programas</a>
+            <a href="#coaches" class="mobile-link">Treinadores</a>
+            <a href="#gallery" class="mobile-link">Galeria</a>
+            <a href="#testimonials" class="mobile-link">Depoimentos</a>
+            <a href="#plans" class="mobile-link">Planos</a>
+            <a href="#location" class="mobile-link">Localização</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contact" class="mobile-link">Contato</a>
+            <a href="#contact" class="btn btn-volt btn-hover-effect mobile-cta">Garantir Aula Grátis</a>
+        </nav>
+    </div>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Seção Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-split">
+                <!-- Lado Esquerdo de Conteúdo -->
+                <div class="hero-left">
+                    <!-- Mobile Floating Particles Canvas (Purple, White & Gray) -->
+                    <canvas id="mobile-particles-canvas" class="mobile-particles-canvas"></canvas>
+
+                    <div class="hero-content-wrapper">
+                        <span class="hero-label animate-fade-in">CENTRO DE PERFORMANCE DE ELITE</span>
+                        <h1 class="hero-headline animate-text-reveal">
+                            FORJE SEU<br>
+                            <span class="accent-text">POTENCIAL</span>
+                        </h1>
+                        <p class="hero-desc animate-fade-in-delayed">
+                            Um espaço de treinamento de alto rendimento projetado para quem busca evolução física, força
+                            mental e resultados reais. Equipamentos biomecânicos importados e acompanhamento científico
+                            especializado.
+                        </p>
+                        <div class="hero-ctas animate-fade-in-delayed">
+                            <a href="https://api.whatsapp.com/send/?phone=5517996038336&text&type=phone_number&app_absent=0"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-volt btn-hover-effect">Falar no
+                                WhatsApp &rarr;</a>
+                            <a href="https://www.canva.com/design/DAGOAqpP7Y0/GJfN3vit8CRjtTDIJOA0tQ/view?utm_content=DAGOAqpP7Y0&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-hover-effect">Ver
+                                Catálogo Digital ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lado Direito dos Slides -->
+                <div class="hero-right">
+                    <div class="hero-slideshow-container" id="hero-slideshow">
+                        <!-- Imagens dinâmicas serão inseridas por JS aqui -->
+                    </div>
+                    <div class="hero-gradient-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content animate-reveal">
+                        <span class="section-label">A ARTE DA PERFORMANCE</span>
+                        <h2 class="section-title">ALTO RENDIMENTO & CIÊNCIA</h2>
+                        <div class="divider"></div>
+                        <p class="about-text">
+                            A Fit Company não é apenas uma academia convencional; é um ecossistema de alto rendimento
+                            projetado para extrair o máximo do seu potencial. Combinamos os melhores aparelhos
+                            biomecânicos do mundo, ciência do esporte e atendimento humanizado em um ambiente premium e
+                            exclusivo.
+                        </p>
+                        <p class="about-text-secondary">
+                            Nossa equipe de preparadores e treinadores de elite desenha metodologias baseadas em
+                            evidências para garantir que cada sessão de treino seja eficiente, segura e focada em
+                            resultados sólidos e duradouros.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <span class="feature-title">CIÊNCIA</span>
+                                <span class="feature-desc">Prescrição & Biomecânica de Elite</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">RECOVERY</span>
+                                <span class="feature-desc">Crioterapia & Regeneração Muscular</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">EXCLUSIVO</span>
+                                <span class="feature-desc">Treinadores Especializados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image-wrapper animate-reveal">
+                        <div class="image-inner">
+                            <img src="assets/about_gym.png" alt="Área de Musculação Biomecânica Fit Company"
+                                class="img-responsive hover-zoom-img">
+                        </div>
+                        <div class="about-image-badge">
+                            <span class="badge-num">10k+</span>
+                            <span class="badge-txt">Treinos Prescritos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Programas (Modalidades) -->
+        <section class="services section-padding" id="programs">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">NOSSAS MODALIDADES</span>
+                    <h2 class="section-title">NOSSOS PROGRAMAS DE TREINO</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Modalidade 1: Musculação -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <path
+                                    d="M6.5 6.5h11M6.5 17.5h11M3 10V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M21 14v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <path d="M12 4v16" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Musculação</h3>
+                        <p class="service-desc">Treinamento de força com equipamentos biomecânicos modernos que otimizam
+                            a curva de carga, promovem hipertrofia e garantem máxima segurança articular.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 2: Treinamento Funcional -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5" />
+                                <path d="M12 12v10" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Treinamento Funcional</h3>
+                        <p class="service-desc">Aperfeiçoe sua mobilidade, estabilização central (core), coordenação
+                            motoras e agilidade com treinos dinâmicos de alta performance.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 3: Cross Training -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Cross Training</h3>
+                        <p class="service-desc">Treinamento de alta intensidade constante e variado que combina
+                            ginástica, levantamento de peso e capacidade metabólica extrema.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 4: Muay Thai -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="M8 11h8M12 7v8" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Muay Thai</h3>
+                        <p class="service-desc">Arte marcial milenar focada em golpes potentes com punhos, cotovelos,
+                            joelhos e canelas, oferecendo defesa pessoal e elevadíssima queima calórica.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 5: Karatê -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a10 10 0 0 0 0 20 5 5 0 0 1 0-10 5 5 0 0 0 0-10z" />
+                                <circle cx="12" cy="7.5" r="1.5" fill="currentColor" />
+                                <circle cx="12" cy="16.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Karatê</h3>
+                        <p class="service-desc">Arte marcial tradicional voltada para a autodisciplina, foco mental,
+                            força técnica, postura e valores filosóficos de respeito e autodefesa.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 6: Programa FitMove de Caminhada -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <path d="M13 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                <path d="M6 21l3-7 3 2 4 5" />
+                                <path d="M17 11l-4-3-3 3" />
+                                <path d="M9 11l-3 4-2-1" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">FitMove (Programa de Caminhada)</h3>
+                        <p class="service-desc">Programa exclusivo de caminhadas monitoradas e orientadas por
+                            profissionais, ideal para saúde cardiovascular, perda de peso e interação em grupo.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 7: Pilates -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <path d="M12 3a9 9 0 0 0 0 18 9 9 0 0 0 0-18z" />
+                                <path d="M8 12c1.5-2 4-2 5.5 0s4 2 5.5 0" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Pilates</h3>
+                        <p class="service-desc">Método focado no fortalecimento do powerhouse (core), reinhamento
+                            postural, flexibilidade profunda, controle respiratório e equilíbrio corporal.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 8: Natação -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <path d="M2 6c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2" />
+                                <path d="M2 12c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2" />
+                                <path d="M2 18c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2 2.5-2 5-2" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Natação</h3>
+                        <p class="service-desc">Piscina aquecida semiolímpica para todos os níveis, desde o aprendizado
+                            dos estilos até treinos intensivos de condicionamento de baixo impacto.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 9: Hidroterapia -->
+                    <div class="service-card animate-reveal">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                                <path d="M12 11v6M9 14h6" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Hidroterapia</h3>
+                        <p class="service-desc">Tratamento terapêutico em ambiente aquático aquecido focado no alívio
+                            articular, reabilitação física, recuperação de lesões e bem-estar geral.</p>
+                        <div class="card-border-glow"></div>
+                    </div>
+
+                    <!-- Modalidade 10: Recovery & Fisioterapia (Interactive Card) -->
+                    <div class="service-card animate-reveal recovery-card" id="protese-card">
+                        <div class="service-icon">
+                            <!-- Therapy / Plus Cross inside Shield SVG -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round" class="volt-svg">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M12 8v8M8 12h8" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Recovery & Fisioterapia</h3>
+                        <p class="service-desc"><strong>O auge da regeneração muscular!</strong> Crioterapia,
+                            pressoterapia pneumática e avaliações de bioimpedância. <span
+                                style="color: var(--accent-color); font-weight: bold; cursor: pointer; display: inline-block; margin-top: 5px;">(Clique
+                                para detalhes)</span></p>
+                        <div class="card-border-glow"></div>
+
+                        <!-- Balão com abas sobre o recovery -->
+                        <div class="recovery-balloon" id="protese-balloon" role="dialog"
+                            aria-label="Detalhes da Área de Recovery">
+                            <button class="balloon-close" id="protese-balloon-close"
+                                aria-label="Fechar Balão">&times;</button>
+                            <div class="balloon-header">
+                                <h4>Recovery & Fisioterapia</h4>
+                                <span class="balloon-tagline">O Auge da Regeneração Biológica</span>
+                            </div>
+
+                            <!-- Abas individuais -->
+                            <div class="balloon-tabs">
+                                <button class="tab-btn active" data-tab="info">Crioterapia</button>
+                                <button class="tab-btn" data-tab="manutencao">Recovery Boots</button>
+                                <button class="tab-btn" data-tab="vida">Bioimpedância</button>
+                            </div>
+
+                            <!-- Conteúdo das abas -->
+                            <div class="balloon-content">
+                                <div class="tab-content active" id="tab-info">
+                                    <p>Banheiras de gelo sob temperatura controlada de <strong>4°C a 8°C</strong>.</p>
+                                    <p>Imersão fria para redução instantânea de dores pós-treino, aceleração de
+                                        recuperação tecidual e alívio do estresse neuromuscular.</p>
+                                </div>
+                                <div class="tab-content" id="tab-manutencao">
+                                    <p>Botas de compressão pneumática ativa.</p>
+                                    <p>Esse tratamento massageia as pernas promovendo a drenagem linfática, acelerando a
+                                        eliminação de resíduos metabólicos e melhorando a flexibilidade muscular.</p>
+                                </div>
+                                <div class="tab-content" id="tab-vida">
+                                    <p>Análise de composição corporal de última geração.</p>
+                                    <ul>
+                                        <li>✓ Porcentagem de Gordura e Massa Magra</li>
+                                        <li>✓ Taxa Metabólica Basal (TMB)</li>
+                                        <li>✓ Nível de Água Corporal Total</li>
+                                        <li>✓ Histórico de evolução por aplicativo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center animate-reveal" style="margin-top: 50px;">
+                    <a href="https://www.canva.com/design/DAGOAqpP7Y0/GJfN3vit8CRjtTDIJOA0tQ/view?utm_content=DAGOAqpP7Y0&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-large btn-hover-effect">
+                        Acessar Catálogo Completo↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Treinadores -->
+        <section class="barbers section-padding" id="coaches">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">METODOLOGIA CIENTÍFICA</span>
+                    <h2 class="section-title">NOSSOS TREINADORES DE ELITE</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="barbers-grid">
+                    <!-- Treinador 1 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/coach_1.png" alt="Treinador Arthur Mendes"
+                                class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"A consistência supera a intensidade todas as vezes no longo
+                                    prazo."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Arthur Mendes</h3>
+                            <span class="barber-role">Coordenador & Especialista em Força</span>
+                        </div>
+                    </div>
+
+                    <!-- Treinador 2 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/coach_2.png" alt="Treinadora Sofia Valente"
+                                class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"O movimento biomecanicamente inteligente gera resultados
+                                    sólidos sem lesões."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Sofia Valente</h3>
+                            <span class="barber-role">Especialista em Hipertrofia & Biomecânica</span>
+                        </div>
+                    </div>
+
+                    <!-- Treinador 3 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/coach_3.png" alt="Treinador Gabriel Borges"
+                                class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"Prevenir e reabilitar é a base fundamental para alcançar a
+                                    alta performance."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Gabriel Borges</h3>
+                            <span class="barber-role">Fisioterapeuta & Preparador Físico</span>
+                        </div>
+                    </div>
+
+                    <!-- Treinador 4 -->
+                    <div class="barber-card animate-reveal">
+                        <div class="barber-image">
+                            <img src="assets/coach_4.png" alt="Treinador Lucas Pinheiro"
+                                class="img-responsive hover-zoom-img">
+                            <div class="barber-overlay">
+                                <span class="barber-quote">"O corpo humano é uma máquina projetada para se mover com
+                                    potência extrema."</span>
+                            </div>
+                        </div>
+                        <div class="barber-info">
+                            <h3 class="barber-name">Lucas Pinheiro</h3>
+                            <span class="barber-role">Coach de LPO & Condicionamento Geral</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Galeria -->
+        <section class="gallery section-padding" id="gallery">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">INFRAESTRUTURA DE ELITE</span>
+                    <h2 class="section-title">A GALERIA</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="gallery-grid-masonry">
+                    <div class="gallery-item item-vertical animate-reveal" data-img="assets/gallery_1.png">
+                        <img src="assets/gallery_1.png" alt="Área de Cardio Moderna Fit Company" loading="lazy">
+                        <div class="gallery-hover">
+                            <span class="gallery-view">Ampliar Foto</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-reveal" data-img="assets/gallery_2.png">
+                        <img src="assets/gallery_2.png" alt="Área de Treino Funcional e Turf" loading="lazy">
+                        <div class="gallery-hover">
+                            <span class="gallery-view">Ampliar Foto</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item animate-reveal" data-img="assets/gallery_3.png">
+                        <img src="assets/gallery_3.png" alt="Clínica de Recovery e Crioterapia" loading="lazy">
+                        <div class="gallery-hover">
+                            <span class="gallery-view">Ampliar Foto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox da Galeria em Tela Cheia -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Fechar Galeria">&times;</button>
+            <div class="lightbox-content">
+                <img src="" alt="Foto da galeria ampliada" id="lightbox-img">
+            </div>
+        </div>
+
+        <!-- Seção de Depoimentos (Avaliações Reais do Google) -->
+        <section class="testimonials section-padding" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">AVALIAÇÕES NO GOOGLE</span>
+                    <h2 class="section-title">DEPOIMENTOS DOS ALUNOS</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="testimonial-slider-container animate-reveal">
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <!-- Depoimento 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Muito bom, atendimento ótimo, pessoas adoráveis."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Cristina</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 2 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Lugar muito bom... Tem bastante equipamentos e espaço livre pra fazer um treino
+                                específico fora das máquinas."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Vando Souza</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 3 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Costumo frequentar quando estou de passagem pela cidade. Muito boa 👍🏼"
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Nutri Marcelo Andrade</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 4 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Ótimo horário de funcionamento, profissionais dedicados e localização excelente."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Ariel Rocha de Souza</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 5 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Aqui é top! Estrutura sensacional para treino de verdade, equipamentos completos."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Jefferson Guedes Santos</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 6 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "É o melhor lugar para começar o dia com muito ânimo e disposição."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Mau Mau</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 7 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Bom, ambiente amplo, variedades de equipamentos, ótima localização 👍🏼"
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">William Lopes</h4>
+
+                            </div>
+                        </div>
+
+                        <!-- Depoimento 8 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="quote-text">
+                                "Lugar bem apropriado, ótimos aparelhos, e bom atendimento."
+                            </blockquote>
+                            <div class="client-info">
+                                <h4 class="client-name">Eduardo Gonzales</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles dos Slides -->
+                    <div class="testimonial-controls">
+                        <button class="ctrl-btn ctrl-prev" id="prev-testi" aria-label="Depoimento Anterior">
+                            &larr;
+                        </button>
+                        <div class="testimonial-dots" id="testimonial-dots">
+                            <!-- Gerado dinamicamente via JS -->
+                        </div>
+                        <button class="ctrl-btn ctrl-next" id="next-testi" aria-label="Próximo Depoimento">
+                            &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Tabela de Preços / Planos (Oficiais) -->
+        <section class="pricing section-padding" id="plans">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">NOSSAS OPÇÕES</span>
+                    <h2 class="section-title">PLANOS & MODALIDADES</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <!-- Grid dos 5 Planos Principais -->
+                <div class="pricing-grid-5 animate-reveal">
+                    <!-- 1. Plano Premium -->
+                    <div class="plan-card">
+                        <div>
+                            <span class="plan-badge">Entrada Popular</span>
+                            <h3 class="plan-name">Plano Premium</h3>
+                            <p class="plan-desc">Musculação completa + Funcional de alta intensidade.</p>
+                            <div class="plan-price-box">
+                                <span class="plan-currency">R$</span>
+                                <span class="plan-price">99,90</span>
+                                <span class="plan-period">/ mês</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="check-icon">✓</span> Musculação Completa</li>
+                                <li><span class="check-icon">✓</span> Treinamento Funcional</li>
+                                <li><span class="check-icon">✓</span> Acompanhamento de Treino</li>
+                                <li><span class="check-icon">✓</span> Equipamentos Importados</li>
+                            </ul>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=5517996038336&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Premium%20(Musculação%20%2B%20Funcional)."
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-block btn-hover-effect">Matricular-se &rarr;</a>
+                    </div>
+
+                    <!-- 2. Plano Exclusive -->
+                    <div class="plan-card">
+                        <div>
+                            <span class="plan-badge">Saúde & Água</span>
+                            <h3 class="plan-name">Plano Exclusive</h3>
+                            <p class="plan-desc">Musculação de alta performance + Hidroginástica orientada.</p>
+                            <div class="plan-price-box">
+                                <span class="plan-currency">R$</span>
+                                <span class="plan-price">169,90</span>
+                                <span class="plan-period">/ mês</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="check-icon">✓</span> Musculação Completa</li>
+                                <li><span class="check-icon">✓</span> Hidroginástica Orientada</li>
+                                <li><span class="check-icon">✓</span> Piscina Aquecida</li>
+                                <li><span class="check-icon">✓</span> Vestiários Equipados</li>
+                            </ul>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=5517996038336&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Exclusive%20(Musculação%20%2B%20Hidroginástica)."
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-block btn-hover-effect">Matricular-se &rarr;</a>
+                    </div>
+
+                    <!-- 3. Plano Clube Extra (Featured) -->
+                    <div class="plan-card featured">
+                        <div>
+                            <span class="plan-badge popular">★ O Mais Completo</span>
+                            <h3 class="plan-name" style="color: var(--accent-color);">Plano Clube Extra</h3>
+                            <p class="plan-desc">Musculação completa + Natação profissional.</p>
+                            <div class="plan-price-box">
+                                <span class="plan-currency">R$</span>
+                                <span class="plan-price">189,90</span>
+                                <span class="plan-period">/ mês</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="check-icon">✓</span> Musculação Completa</li>
+                                <li><span class="check-icon">✓</span> Natação Profissional</li>
+                                <li><span class="check-icon">✓</span> Piscina Aquecida</li>
+                                <li><span class="check-icon">✓</span> Acompanhamento Técnico</li>
+                                <li><span class="check-icon">✓</span> Avaliação Periódica</li>
+                            </ul>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=5517996038336&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Clube%20Extra%20(Musculação%20%2B%20Natação)."
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-volt btn-block btn-hover-effect">Garantir Plano Extra &rarr;</a>
+                    </div>
+
+                    <!-- 4. Plano Fight -->
+                    <div class="plan-card">
+                        <div>
+                            <span class="plan-badge">Combate & Força</span>
+                            <h3 class="plan-name">Plano Fight</h3>
+                            <p class="plan-desc">Musculação de precisão + Modalidade de Luta (Muay Thai / Karatê).</p>
+                            <div class="plan-price-box">
+                                <span class="plan-currency">R$</span>
+                                <span class="plan-price">169,90</span>
+                                <span class="plan-period">/ mês</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="check-icon">✓</span> Musculação Completa</li>
+                                <li><span class="check-icon">✓</span> Modalidade de Luta</li>
+                                <li><span class="check-icon">✓</span> Tatame & Sacos de Pancada</li>
+                                <li><span class="check-icon">✓</span> Preparação Física</li>
+                            </ul>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=5517996038336&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Fight%20(Musculação%20%2B%20Luta)."
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-block btn-hover-effect">Matricular-se &rarr;</a>
+                    </div>
+
+                    <!-- 5. Plano Dance -->
+                    <div class="plan-card">
+                        <div>
+                            <span class="plan-badge">Ritmo & Energia</span>
+                            <h3 class="plan-name">Plano Dance</h3>
+                            <p class="plan-desc">Musculação completa + Aulas de Dança e FitMove.</p>
+                            <div class="plan-price-box">
+                                <span class="plan-currency">R$</span>
+                                <span class="plan-price">169,90</span>
+                                <span class="plan-period">/ mês</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li><span class="check-icon">✓</span> Musculação Completa</li>
+                                <li><span class="check-icon">✓</span> Aulas de Dança & Ritmos</li>
+                                <li><span class="check-icon">✓</span> Queima Calórica & Cardio</li>
+                                <li><span class="check-icon">✓</span> Ambiente Climatizado</li>
+                            </ul>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=5517996038336&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Dance%20(Musculação%20%2B%20Dança)."
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-block btn-hover-effect">Matricular-se &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Sub-bloco: Passaportes Diários / Curtos + Aula Experimental + Condições de Pagamento -->
+                <div class="plans-extra-grid animate-reveal">
+                    <!-- Card Passaportes Curtos -->
+                    <div class="extra-plan-card">
+                        <div class="extra-card-header">
+                            <span class="extra-badge">PASSAPORTES AVULSOS</span>
+                            <h4>Treine por Período</h4>
+                        </div>
+                        <div class="passes-list">
+                            <div class="pass-item">
+                                <span class="pass-name">Diária</span>
+                                <span class="pass-price">R$ 15,00</span>
+                            </div>
+                            <div class="pass-item">
+                                <span class="pass-name">Semanal</span>
+                                <span class="pass-price">R$ 50,00</span>
+                            </div>
+                            <div class="pass-item">
+                                <span class="pass-name">15 Dias</span>
+                                <span class="pass-price">R$ 70,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Aula Experimental Gratuita (Neon Highlight) -->
+                    <div class="extra-plan-card free-trial-card">
+                        <div class="free-trial-content">
+                            <span class="free-trial-badge">⚡ EXPERIMENTE GRÁTIS</span>
+                            <h3>FAÇA 1 AULA EXPERIMENTAL GRATUITA</h3>
+                            <p>Conheça nossa estrutura sem compromisso com acompanhamento de um treinador.</p>
+                            <a href="https://api.whatsapp.com/send/?phone=5517996038336&text=Olá!%20Quero%20agendar%20minha%20Aula%20Experimental%20Gratuita."
+                                target="_blank" rel="noopener noreferrer" class="btn btn-volt btn-hover-effect">Agendar
+                                Aula Grátis &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Card Formas de Pagamento & Descontos -->
+                    <div class="extra-plan-card discounts-card">
+                        <div class="extra-card-header">
+                            <span class="extra-badge">CONDIÇÕES ESPECIAIS</span>
+                            <h4>Formas de Pagamento & Descontos</h4>
+                        </div>
+                        <ul class="discounts-list">
+                            <li>
+                                <strong>10% OFF no Plano Anual</strong>
+                                <span>Todas as modalidades (exceto musculação pura) no plano anual.</span>
+                            </li>
+                            <li>
+                                <strong>+ 5% OFF À Vista</strong>
+                                <span>Desconto adicional pagando no Dinheiro ou Pix.</span>
+                            </li>
+                            <li>
+                                <strong>Parcelamento no Cartão</strong>
+                                <span>Semestral em até 4x | Anual em até 6x no cartão de crédito.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de FAQ (Perguntas Frequentes) -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">RESOLVA SUAS DÚVIDAS</span>
+                    <h2 class="section-title">PERGUNTAS FREQUENTES</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="faq-accordion-wrapper animate-reveal">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Como funciona a aula experimental gratuita?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                Você pode solicitar sua aula experimental gratuita preenchendo o formulário de contato
+                                no final desta página. Nossa equipe entrará em contato via WhatsApp ou telefone para
+                                agendar o melhor dia e horário para a sua visita com um treinador guiado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>A academia oferece vestiários e estacionamento?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                Sim. Oferecemos estacionamento privativo gratuito para alunos com serviço de manobrista.
+                                Nossos vestiários são equipados com toalhas macias higienizadas, vestiários com chuveiro
+                                e amenities premium para sua total conveniência pós-treino.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Como funciona a política de cancelamento ou trancamento?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                O plano Essential (mensal) pode ser cancelado a qualquer momento com aviso prévio de 30
+                                dias. O plano Performance (anual) permite o trancamento gratuito de até 30 dias
+                                acumulativos em caso de viagens ou atestados médicos. Para cancelamento antecipado no
+                                plano anual, há incidência de multa proporcional descrita em contrato.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Posso treinar com meu personal trainer de fora da Fit Company?</span>
+                            <span class="faq-icon-indicator">+</span>
+                        </button>
+                        <div class="faq-panel">
+                            <p class="faq-content">
+                                Sim, aceitamos a entrada de profissionais externos mediante um cadastro rápido na nossa
+                                recepção e o pagamento de uma taxa diária ou mensal de utilização de infraestrutura pelo
+                                profissional. Nossos próprios treinadores também estão disponíveis para atendimento
+                                personalizado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Localização com Google Maps -->
+        <section class="location section-padding" id="location">
+            <div class="container">
+                <div class="section-header text-center animate-reveal">
+                    <span class="section-label">VENHA NOS CONHECER</span>
+                    <h2 class="section-title">NOSSA LOCALIZAÇÃO</h2>
+                    <div class="divider center"></div>
+                </div>
+
+                <div class="location-grid animate-reveal">
+                    <!-- Mapa Interativo do Google Maps -->
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14902.946115984407!2d-49.7845!3d-20.4746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd38531ebf107f%3A0x63eb80be12c6f1f4!2sCosmorama%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                            class="google-map-iframe" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização da Fit Company no Google Maps">
+                        </iframe>
+                    </div>
+
+                    <!-- Card de Informações da Localização -->
+                    <div class="location-info-card">
+                        <div>
+                            <div class="loc-header">
+                                <span class="loc-badge">Sede Oficial</span>
+                                <h3>Fit Company Cosmorama</h3>
+                            </div>
+
+                            <div class="loc-item">
+                                <div class="loc-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5>Endereço</h5>
+                                    <p>Rua Joaquim Rodrigues do Moinho, 1000 - Centro<br>Cosmorama - SP, 15530-000</p>
+                                </div>
+                            </div>
+
+                            <div class="loc-item">
+                                <div class="loc-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5>Horários de Funcionamento</h5>
+                                    <p>Segunda a Sexta: 06h às 22h<br>Sábados: 08h às 18h | Domingos: 09h às 14h</p>
+                                </div>
+                            </div>
+
+                            <div class="loc-item">
+                                <div class="loc-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5>Contato & WhatsApp</h5>
+                                    <p><a href="https://api.whatsapp.com/send/?phone=5517996038336&text&type=phone_number&app_absent=0"
+                                            target="_blank" class="volt-link">+55 (17) 99603-8336</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://maps.google.com/?q=Cosmorama,SP" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-volt btn-block btn-hover-effect loc-btn">
+                            Abrir no Google Maps ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato & Agendamento -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Esquerda: Formulário -->
+                    <div class="contact-form-container animate-reveal">
+                        <span class="section-label volt-accent-label">COMECE SUA JORNADA</span>
+                        <h2 class="section-title">SOLICITE UMA VISITA GUIADA</h2>
+                        <div class="divider"></div>
+
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-name">Nome Completo</label>
+                                    <div class="input-icon-group">
+                                        <span class="input-icon left-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                                <circle cx="12" cy="7" r="4"/>
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="client-name" name="name" placeholder="Seu nome completo" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-phone">WhatsApp / Telefone</label>
+                                    <div class="input-icon-group">
+                                        <span class="input-icon left-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                            </svg>
+                                        </span>
+                                        <input type="tel" id="client-phone" name="phone" placeholder="(17) 99999-9999" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="select-service">Plano de Interesse</label>
+                                    <div class="input-icon-group select-icon-group">
+                                        <span class="input-icon left-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                            </svg>
+                                        </span>
+                                        <select id="select-service" name="service" required>
+                                            <option value="" disabled selected>✨ Escolha um plano de interesse</option>
+                                            <option value="experimental">⚡ Aula Experimental (Grátis)</option>
+                                            <option value="premium">🏋️ Plano Premium (R$ 99,90/mês)</option>
+                                            <option value="exclusive">🌊 Plano Exclusive (R$ 169,90/mês)</option>
+                                            <option value="clube-extra">⭐ Plano Clube Extra (R$ 189,90/mês)</option>
+                                            <option value="fight">🥊 Plano Fight (R$ 169,90/mês)</option>
+                                            <option value="dance">💃 Plano Dance (R$ 169,90/mês)</option>
+                                            <option value="passaporte">🎟️ Passaporte Avulso</option>
+                                        </select>
+                                        <span class="input-icon right-icon">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="select-modality">Modalidade de Interesse</label>
+                                    <div class="input-icon-group select-icon-group">
+                                        <span class="input-icon left-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                                                <line x1="6" y1="1" x2="6" y2="4"/>
+                                                <line x1="10" y1="1" x2="10" y2="4"/>
+                                                <line x1="14" y1="1" x2="14" y2="4"/>
+                                            </svg>
+                                        </span>
+                                        <select id="select-modality" name="modality" required>
+                                            <option value="" disabled selected>⚡ Selecionar a modalidade</option>
+                                            <option value="musculacao">🏋️ Musculação de Precisão</option>
+                                            <option value="funcional">🏃 Treinamento Funcional</option>
+                                            <option value="crosstraining">🔥 Cross Training</option>
+                                            <option value="muaythai">🥊 Muay Thai & Lutas</option>
+                                            <option value="karate">🥋 Karatê</option>
+                                            <option value="danca">💃 Dança & Ritmos</option>
+                                            <option value="pilates">🧘 Pilates Studio</option>
+                                            <option value="natacao">🏊 Natação</option>
+                                            <option value="hidroginastica">🌊 Hidroginástica</option>
+                                        </select>
+                                        <span class="input-icon right-icon">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-date">Data Desejada</label>
+                                    <div class="input-icon-group">
+                                        <span class="input-icon left-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="booking-date" name="date" placeholder="Escolha a data no calendário" required readonly>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-time">Horário de Preferência</label>
+                                    <div class="input-icon-group select-icon-group">
+                                        <span class="input-icon left-icon">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                        </span>
+                                        <select id="booking-time" name="time" required>
+                                            <option value="" disabled selected>🕒 Escolha o horário desejado</option>
+                                            <option value="06:00">🌅 06:00 às 09:00 (Manhã Cedo)</option>
+                                            <option value="09:00">☀️ 09:00 às 12:00 (Manhã)</option>
+                                            <option value="12:00">🌤️ 12:00 às 15:00 (Almoço / Tarde)</option>
+                                            <option value="15:00">🌆 15:00 às 18:00 (Tarde)</option>
+                                            <option value="18:00">🌙 18:00 às 21:00 (Noite)</option>
+                                        </select>
+                                        <span class="input-icon right-icon">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="6 9 12 15 18 9"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-volt btn-block btn-hover-effect">Enviar Solicitação de
+                                Contato</button>
+                        </form>
+
+                        <!-- Mensagem de sucesso (Toast) -->
+                        <div class="booking-success-message" id="booking-success">
+                            <span class="success-icon">✓</span>
+                            <div>
+                                <h4>Solicitação Recebida</h4>
+                                <p>Recebemos sua mensagem. Um consultor entrará em contato via WhatsApp nas próximas
+                                    horas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Logo & Slogan -->
+                <div class="footer-brand">
+                    <div class="footer-logo-wrapper">
+                        <img src="assets/logo.png" alt="Fit Company Logo" class="footer-logo-img">
+                        <h3 class="footer-logo">FIT <span style="color: var(--accent-color);">COMPANY</span></h3>
+                    </div>
+                    <p class="footer-tagline">Forjando potência, saúde e performance de elite desde 2016.</p>
+                </div>
+
+                <!-- Coluna 2: Links -->
+                <div class="footer-nav">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#programs">Programas</a></li>
+                        <li><a href="#coaches">Treinadores</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#location">Localização</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Links Secundários -->
+                <div class="footer-nav">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#plans">Planos</a></li>
+                        <li><a href="https://www.canva.com/design/DAGOAqpP7Y0/GJfN3vit8CRjtTDIJOA0tQ/view?utm_content=DAGOAqpP7Y0&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                                target="_blank" rel="noopener noreferrer">Catálogo Digital ↗</a></li>
+                        <li><a href="#faq">Dúvidas FAQ</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Redes Sociais -->
+                <div class="footer-social">
+                    <h4>Siga a Fit Company</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/fitcompanycosmorama/?hl=pt-br" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram" class="social-icon"
+                            title="@fitcompanycosmorama">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=5517996038336&text&type=phone_number&app_absent=0"
+                            target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon"
+                            title="WhatsApp Fit Company">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Fit Company. Todos os Direitos Reservados.</p>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send/?phone=5517996038336&text&type=phone_number&app_absent=0" target="_blank"
+        rel="noopener noreferrer" class="whatsapp-float-btn" aria-label="Contato via WhatsApp"
+        title="Falar no WhatsApp">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+    </a>
+
+    <!-- Animações GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Flatpickr Datepicker Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+
+    <!-- Lógica de Aplicação Personalizada -->
+    <script src="app.js"></script>
+</body>
+
+</html>
